@@ -1,0 +1,23 @@
+@startuml
+skinparam nodesep 80
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Person {
+    -id: int
+    -first_name: str
+    -last_name: str
+    -email: str
+    -gender: str
+    -ip_address: str
+
+    +__init__(id: int, first_name: str, last_name: str, email: str, gender: str, ip_address: str)
+    +__str__(): str
+    +id(): int
+    +first_name(): str
+    +last_name(): str
+    +email(): str
+    +gender(): str
+    +ip_address(): str
+}
+@enduml
